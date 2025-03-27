@@ -26,7 +26,7 @@
           <artifactId>maven-compiler-plugin</artifactId>
           <version>3.14.0</version>
           <configuration>
-            <release>17</release>
+            <release>11</release> <!-- Cambiado de 17 a 11 para que sea compatible -->
           </configuration>
         </plugin>
       </plugins>
@@ -60,10 +60,10 @@
             <configuration>
               <rules>
                 <requireMavenVersion>
-                  <version>[3.9.2,)</version>
+                  <version>[3.8.5,)</version> <!-- Permitido desde 3.8.5 en adelante -->
                 </requireMavenVersion>
                 <requireJavaVersion>
-                  <version>[17,)</version>
+                  <version>[11,)</version> <!-- Permitido desde Java 11 en adelante -->
                 </requireJavaVersion>
               </rules>
             </configuration>
